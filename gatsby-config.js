@@ -39,6 +39,7 @@ module.exports = {
         options: {
           repositoryName: 'vpilip', // (REQUIRED, replace with your own)
           accessToken: `${process.env.API_KEY}`, // (optional API access token) 
+          previews: false,
       }
     },
     `gatsby-plugin-netlify`,
