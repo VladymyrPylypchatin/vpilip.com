@@ -40,7 +40,8 @@ module.exports = {
           repositoryName: 'vpilip', // (REQUIRED, replace with your own)
           accessToken: `${process.env.API_KEY}`, // (optional API access token) 
       }
-    }
+    },
+    `gatsby-plugin-netlify`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
