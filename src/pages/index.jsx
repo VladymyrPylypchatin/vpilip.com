@@ -1,18 +1,18 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/Layout/Layout";
 // import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
-    <div className="small-container">
-      <p>Hey, I am Vova Pylypchatin a Software Engeener and Writer. I turn ideas of my client and my own into Web Applications and SaaS Projects. I love creating. I help to myclient  not only with development but with stratagy, architecture and consulting. To make sure that their buissness idaes are succecessfull I not only. I love all about creating Digital Products: Stretagy, Archetucre, Development & Design.</p>
-      <p>When I don't create Digital Products, I spend time documenting my jounreny of building my freelance buissness, share my knowladge about creating digital products. If you are interedsted in some of that take a look at my blog.</p>
-      <p>If this sounds like yoou too, get in touch, I would love to chat</p>
-      <p>Other wise, here you can learn more about who I am and what I do or chek out protfolio.</p>
-    </div>
-  </Layout>
+    <Layout>
+        <div className="small-container">
+            <p>Hi, I am Vova Pilipchatine, a freelance Software Engineer, sportsman, and constant learner. I love turning ideas of my client and my own into real-life Digital products. I can help you define a business model, plan out a strategy, architect a solution and develop your Web Application.</p>
+            <p>If it sounds like it is what you need, you can contact me <Link to="/contacts">here</Link>. Would love to hear from you.</p>
+            <p>When I am not building software I am writing about it. I share lessons learned about building a Web Application and document my journey of building a freelance business. If you are interested in some of that, check out my blog</p>
+            <p>Otherwise, you can learn more about me <Link to="/about">here</Link>, or take a look at my <Link to="/portfolio">portfolio</Link>.</p>
+        </div>
+    </Layout>
 )
 
 export default IndexPage

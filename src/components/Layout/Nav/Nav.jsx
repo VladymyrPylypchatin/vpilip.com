@@ -11,7 +11,7 @@ const Nav = () => {
     return (
         <nav className={styles.nav}>
             <ul>
-                <li className={[styles.nav__item, styles.nav__item_disabled].join(' ')}>
+                <li className={[styles.nav__item].join(' ')}>
                     <Link to="/about/">
                         <img src={AboutMeImg} alt="About me" />
                         <span>About</span>
