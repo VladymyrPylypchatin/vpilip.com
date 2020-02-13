@@ -38,7 +38,7 @@ module.exports = {
         gtmPreview: "env-1",
         dataLayerName: "YOUR_DATA_LAYER_NAME",
       },
-    }
-
+    },
+    `gatsby-plugin-remove-trailing-slashes`,
   ],
 }

@@ -6,10 +6,10 @@
 
 // You can delete this file if you're not using it
 exports.createPages = async ({ graphql, actions }) => {
-    const { createPage } = actions
-    const template = require.resolve(`./src/templates/PostPage/PostPage.jsx`);
+  const { createPage } = actions
+  const template = require.resolve(`./src/templates/PostPage/PostPage.jsx`);
 
-    const pages = await graphql(`
+  const pages = await graphql(`
     {
         prismic {
           allBlogposts {
@@ -26,17 +26,17 @@ exports.createPages = async ({ graphql, actions }) => {
       
   `);
 
-    for (const { node } of pages.data.prismic.allBlogposts.edges) {
-        console.log(node);
-        createPage({
-            path: `/${node._meta.uid}`,
-            component: template,
-            context: {
-                uid: node._meta.uid,
-            },
-        })
-    }
+  for (const { node } of pages.data.prismic.allBlogposts.edges) {
+    console.log(node);
+    createPage({
+      path: `/${node._meta.uid}`,
+      component: template,
+      context: {
+        uid: node._meta.uid,
+      },
+    })
+  }
 
-    console.log(pages);
+  console.log(pages);
 
 }
