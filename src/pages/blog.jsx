@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 
 import BlogLayout from "../components/BlogLayout/BlogLayout";
 import BlogPage from "../components/BlogPage/BlogPage";
-// import SEO from "../components/seo"
+import SEO from "../components/seo"
 
 const Blog = ({ data }) => {
   const allBlogPostsRaw = data.prismic.allBlogposts.edges;
@@ -26,6 +26,11 @@ const Blog = ({ data }) => {
 
   return (
     <BlogLayout>
+      <SEO
+        title={`Vova Pilipchatin's Blog`}
+        customTitle
+
+      />
       <BlogPage posts={blogPosts} />
     </BlogLayout>
   );

@@ -1,21 +1,22 @@
 .personImage {
-  &__imgContainer {
-    height: 200px;
-    width: 200px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 100px;
+	&__imgContainer {
+		height: 200px;
+		width: 200px;
+		margin: auto;
+		overflow: hidden;
+		border-radius: 100px;
 
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
-  }
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
 
-  &__title {
-    text-align: center;
-    font-weight: 500;
-    margin-top: 20px;
-  }
+	&__title {
+		text-align: center;
+		font-weight: 500;
+		margin-top: 20px;
+		font-size: 18px;
+	}
 }

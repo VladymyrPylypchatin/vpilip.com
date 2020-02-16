@@ -3,10 +3,15 @@ import React from "react"
 
 import Layout from "../components/Layout/Layout";
 import PersonImage from '../components/AboutPage/PersonImage/PersonImage';
-// import SEO from "../components/seo"
+import SEO from "../components/seo"
 
 const IndexPage = () => (
     <Layout>
+        <SEO
+            title='About Vova Pilipchatin'
+            description='Freelance Software Engeenier and Web Developer who learns how to launch successfull SaaS projects and freelance buisness'
+            customTitle
+        />
         <div className="small-container">
             <PersonImage />
             <p>
@@ -26,7 +31,7 @@ const IndexPage = () => (
                 <li>Defining Product Strategy</li>
                 <li>Consulting</li>
                 <li>Defining and Development of MVP</li>
-                <li>Development of the Web Applicating</li>
+                <li>Development of the Web Application</li>
             </ul>
             <p>
                 If you feel like you need some of these, get in touch!
