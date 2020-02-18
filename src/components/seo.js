@@ -51,7 +51,7 @@ function SEO({ description, lang, meta, title, customTitle }) {
                 },
                 {
                     name: `twitter:creator`,
-                    content: site.siteMetadata.author,
+                    content: site?.siteMetadata.author,
                 },
                 {
                     name: `twitter:title`,
