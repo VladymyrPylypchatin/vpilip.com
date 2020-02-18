@@ -19,7 +19,7 @@ function SEO({ description, lang, meta, title, customTitle }) {
     `
     )
 
-    const metaDescription = description || site.siteMetadata.description
+    const metaDescription = description || site.siteMetadata.description;
 
     return (
         <Helmet
