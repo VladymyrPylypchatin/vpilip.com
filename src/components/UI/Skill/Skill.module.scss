@@ -1,0 +1,14 @@
+.skill {
+	background: green;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 400;
+	color: white;
+	background: #0cce6b;
+	border-radius: 4px;
+	padding: 5px 15px;
+	margin-bottom: 10px;
+	&:not(:last-of-type) {
+		margin-right: 5px;
+	}
+}

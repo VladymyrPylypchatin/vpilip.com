@@ -17,10 +17,10 @@ const Nav = () => {
                         <span>About</span>
                     </Link>
                 </li>
-                <li className={[styles.nav__item, styles.nav__item_disabled].join(' ')}>
-                    <Link to="/">
+                <li className={[styles.nav__item].join(' ')}>
+                    <Link to="/projects/">
                         <img src={LaptopImg} alt="Portfolio" />
-                        <span>Apps</span>
+                        <span>Projects</span>
                     </Link>
                 </li>
                 <li className={styles.nav__item}>
