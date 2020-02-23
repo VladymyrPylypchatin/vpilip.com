@@ -25,14 +25,16 @@ const Blog = ({ data }) => {
 
 
   return (
-    <BlogLayout>
+    <>
       <SEO
         title={`Vova Pilipchatin's Blog`}
+        description={`Weekly blog about Creating Digital Products, Software Engeeniring and Freelancing`}
         customTitle
-
       />
-      <BlogPage posts={blogPosts} />
-    </BlogLayout>
+      <BlogLayout>
+        <BlogPage posts={blogPosts} />
+      </BlogLayout>
+    </>
   );
 }
 

@@ -41,5 +41,6 @@ module.exports = {
         dataLayerName: "YOUR_DATA_LAYER_NAME",
       },
     },
+    `gatsby-plugin-robots-txt`
   ],
 }
