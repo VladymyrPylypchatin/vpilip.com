@@ -26,8 +26,9 @@ exports.createPages = async ({ graphql, actions }) => {
       
   `);
 
+  console.log(pages)
   for (const { node } of pages.data.prismic.allBlogposts.edges) {
-    console.log(node);
+    console.log(node._meta.uid);
     createPage({
       path: `/${node._meta.uid}/`,
       component: template,
@@ -37,6 +38,6 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   }
 
-  console.log(pages);
+  // console.log(pages);
 
 }
