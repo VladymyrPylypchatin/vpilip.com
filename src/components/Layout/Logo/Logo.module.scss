@@ -23,7 +23,7 @@
 		&_bigest {
 			h1,
 			h2 {
-				font-size: 36px;
+				font-size: 30px;
 				font-weight: bold;
 				padding: 0;
 				margin: 0;
@@ -42,4 +42,30 @@
 
 .hidden {
 	display: none;
+}
+
+@media (min-width: 768px) {
+	.logo {
+		&__text {
+			&_big {
+				h1,
+				h2 {
+					font-size: 24px;
+				}
+			}
+			&_small {
+				font-size: 16px;
+			}
+			&_bigest {
+				h1,
+				h2 {
+					font-size: 36px;
+				}
+			}
+		}
+
+		&__icon_small {
+			height: 40px;
+		}
+	}
 }

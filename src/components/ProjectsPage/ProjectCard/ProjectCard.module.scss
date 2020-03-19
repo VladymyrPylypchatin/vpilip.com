@@ -6,7 +6,7 @@
 		color: #0a2e36;
 	}
 	&__skills {
-		width: 400px;
+		width: 100%;
 		margin: auto;
 		text-align: center;
 		margin-top: 30px;
@@ -17,8 +17,9 @@
 		font-size: 18px;
 		line-height: 28px;
 		color: #0a2e36;
-		width: 400px;
+		width: 100%;
 		margin: auto;
 		text-align: center;
+		min-height: 100px;
 	}
 }

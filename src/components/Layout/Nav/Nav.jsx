@@ -30,7 +30,7 @@ const Nav = () => {
                     </Link>
                 </li>
                 <li className={styles.nav__item}>
-                    <Link to="/">
+                    <Link to="/contacts/">
                         <img src={EnvelopImg} alt="Contacts" />
                         <span>Contacts</span>
                     </Link>

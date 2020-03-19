@@ -1,8 +1,13 @@
 .header {
-  padding: 40px 0 60px 0;
+	padding: 40px 0 20px 0;
 
-  &__nav {
-    margin-top: 30px;
-  }
- 
+	&__nav {
+		margin-top: 30px;
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		padding: 40px 0 40px 0;
+	}
 }

@@ -1,0 +1,28 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+main {
+	flex-grow: 1;
+}
+footer {
+	display: flex;
+	padding: 40px 0;
+	justify-content: center;
+
+	.socials {
+		display: flex;
+		align-items: center;
+
+		a {
+			display: block;
+			height: 20px;
+			margin: 0 15px;
+
+			img {
+				height: 100%;
+			}
+		}
+	}
+}

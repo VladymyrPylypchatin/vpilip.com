@@ -13,7 +13,7 @@ const PostLayout = ({ children }) => {
       <Header />
       <main>{children}</main>
       <footer>
-        Fotter
+
       </footer>
     </>
   )

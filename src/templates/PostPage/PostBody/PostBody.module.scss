@@ -1,31 +1,69 @@
 .postBody {
-    font-family: 'Georgia';
-    p {
-        font-size: 21px;
-        line-height: 1.58;
-        margin-top: 2em;
-        margin-bottom: 0;
-        font-weight: 400;
-    }
+	font-family: 'Georgia';
+	p,
+	ul {
+		font-size: 21px;
+		line-height: 1.58;
+		margin-top: 2em;
+		margin-bottom: 0;
+		font-weight: 400;
+	}
 
-	p, h1, h2, h3, h4 {
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	pre {
 		padding-right: 15px;
 		padding-left: 15px;
 		margin-right: auto;
 		margin-left: auto;
-    }
-    
-    h1, h2, h3, h4, h5 {
-        margin-top: 2.25em;
-        margin-bottom: -1.28em;
-        font-weight: bold;
-    }
+	}
+
+	img {
+		margin: auto;
+	}
+	ul,
+	li {
+		margin: auto;
+	}
+	ul li,
+	ol li {
+		margin-top: 1.34em;
+		font-size: 21px;
+		line-height: 1.58;
+		&:first-child {
+			margin-top: 0.5em;
+		}
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		margin-top: 2.25em;
+		margin-bottom: -1.28em;
+		font-weight: bold;
+	}
 }
 
 @media (min-width: 768px) {
 	.postBody {
-		p, h1, h2, h3, h4 {
+		p,
+		h1,
+		h2,
+		h3,
+		h4,
+		ul,
+		li,
+		pre {
 			width: 680px;
+		}
+
+		img {
+			max-width: 680px;
 		}
 	}
 }

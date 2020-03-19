@@ -1,9 +1,15 @@
 .blogPage {
-
-    
 	&__posts {
 		box-sizing: border-box;
 		margin-top: -90px;
-		padding: 40px;
+		padding: 40px 0;
+	}
+}
+
+@media (min-width: 600px) {
+	.blogPage {
+		&__posts {
+			padding: 40px 0;
+		}
 	}
 }

@@ -1,6 +1,24 @@
 .postsGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 30px;
-    row-gap: 30px;
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 30px;
+}
+
+@media (min-width: 600px) {
+	.postsGrid {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 30px;
+		row-gap: 30px;
+	}
+}
+
+@media (min-width: 992px) {
+	.postsGrid {
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 30px;
+		row-gap: 30px;
+	}
+}
+
+@media (min-width: 1200px) {
 }

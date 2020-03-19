@@ -41,6 +41,16 @@ module.exports = {
         dataLayerName: "YOUR_DATA_LAYER_NAME",
       },
     },
-    `gatsby-plugin-robots-txt`
+    `gatsby-plugin-robots-txt`,
+    // {
+    //   resolve: `gatsby-transformer-remark`,
+    //   options: {
+    //     plugins: [
+    //       {
+    //         resolve: `@raae/gatsby-remark-oembed`,
+    //       }
+    //     ]
+    //   }
+    // }
   ],
 }

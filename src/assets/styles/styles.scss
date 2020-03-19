@@ -9,6 +9,21 @@ p {
 	letter-spacing: 0.02em;
 }
 
+ul {
+	li {
+		margin-top: 1.34em;
+
+		&:first-child {
+			margin-top: 1em;
+		}
+	}
+}
+
+.block-img {
+	display: flex;
+	justify-content: center;
+}
+
 .container,
 .post-container {
 	padding-right: 15px;
@@ -34,13 +49,15 @@ p {
 	letter-spacing: 0.02em;
 }
 
+@media (min-width: 575px) {
+	.small-container {
+		width: 570px;
+	}
+}
+
 @media (min-width: 768px) {
 	.container {
 		width: 750px;
-	}
-
-	.small-container {
-		width: 570px;
 	}
 
 	.post-container {
