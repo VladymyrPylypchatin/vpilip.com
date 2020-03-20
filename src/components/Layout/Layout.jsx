@@ -20,16 +20,16 @@ const Layout = ({ children }) => {
       <main>{children}</main>
       <footer>
         <div className={styles.socials}>
-          <a href="" target="_blank">
+          <a href="https://twitter.com/VPilipchatin" rel="noopener noreferrer" target="_blank">
             <img src={TwitterIcon} alt="twitter" />
           </a>
-          <a href="" target="_blank">
+          <a href="https://medium.com/@vladymyr.pylypchatin" rel="noopener noreferrer" target="_blank">
             <img src={MediumIcon} alt="medium" />
           </a>
-          <a href="" target="_blank">
+          <a href="https://www.instagram.com/vovapilipchatin/" rel="noopener noreferrer" target="_blank">
             <img src={InstagramIcon} alt="instagram" />
           </a>
-          <a href="" target="_blank">
+          <a href="https://www.linkedin.com/in/vladymyrpylypchatin-b98a4a176/" rel="noopener noreferrer" target="_blank">
             <img src={LinkedInIcon} alt="linkedin" />
           </a>
         </div>

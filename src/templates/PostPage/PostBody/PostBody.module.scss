@@ -1,7 +1,8 @@
 .postBody {
 	font-family: 'Georgia';
 	p,
-	ul {
+	ul,
+	ol {
 		font-size: 21px;
 		line-height: 1.58;
 		margin-top: 2em;
@@ -21,12 +22,22 @@
 		margin-left: auto;
 	}
 
+	pre {
+		background: #0a2e36;
+		color: white;
+		padding: 15px;
+		border-radius: 6px;
+		margin-top: 15px;
+	}
+
 	img {
 		margin: auto;
 	}
 	ul,
+	ol,
 	li {
-		margin: auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	ul li,
 	ol li {
@@ -49,6 +60,18 @@
 	}
 }
 
+.gistTitle {
+	display: none;
+}
+
+.gist {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+}
+
 @media (min-width: 768px) {
 	.postBody {
 		p,
@@ -63,6 +86,10 @@
 		}
 
 		img {
+			max-width: 680px;
+		}
+
+		.gist {
 			max-width: 680px;
 		}
 	}
