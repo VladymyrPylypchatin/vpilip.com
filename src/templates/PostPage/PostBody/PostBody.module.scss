@@ -25,12 +25,21 @@
 		box-sizing: border-box;
 	}
 
+	img {
+		height: auto;
+	}
+
 	pre {
 		background: #0a2e36;
 		color: white;
 		padding: 15px;
 		border-radius: 6px;
 		margin-top: 15px;
+		margin-right: 15px;
+		margin-left: 15px;
+		width: 100%;
+		box-sizing: border-box;
+		width: call(100% - 30px);
 	}
 
 	ul,
