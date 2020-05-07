@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'Gotham Rounded';
-    src: url('/fonts/GothamRounded-Book.woff2') format('woff2'),
-        url('/fonts/GothamRounded-Book.woff') format('woff'),
+    src: url('/fonts/GothamRounded-Book.woff2') format('woff2'), url('/fonts/GothamRounded-Book.woff') format('woff'),
         url('/fonts/GothamRounded-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -30,8 +29,7 @@
 
 @font-face {
     font-family: 'Gotham Rounded';
-    src: url('/fonts/GothamRounded-Light.woff2') format('woff2'),
-        url('/fonts/GothamRounded-Light.woff') format('woff'),
+    src: url('/fonts/GothamRounded-Light.woff2') format('woff2'), url('/fonts/GothamRounded-Light.woff') format('woff'),
         url('/fonts/GothamRounded-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
@@ -50,8 +48,7 @@
 
 @font-face {
     font-family: 'Gotham Rounded';
-    src: url('/fonts/GothamRounded-Bold.woff2') format('woff2'),
-        url('/fonts/GothamRounded-Bold.woff') format('woff'),
+    src: url('/fonts/GothamRounded-Bold.woff2') format('woff2'), url('/fonts/GothamRounded-Bold.woff') format('woff'),
         url('/fonts/GothamRounded-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
@@ -61,9 +58,8 @@
 //Georgia Font
 @font-face {
     font-family: 'Georgia';
-    src:url('/fonts/Georgia.woff2') format('woff2'),
-       url('/fonts/Georgia.woff') format('woff'),
-       url('/fonts/Georgia.ttf') format('truetype');
+    src: url('/fonts/Georgia.woff2') format('woff2'), url('/fonts/Georgia.woff') format('woff'),
+        url('/fonts/Georgia.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -71,9 +67,8 @@
 
 @font-face {
     font-family: 'Georgia';
-    src:url('/fonts/Georgia-BoldItalic.woff2') format('woff2'),
-       url('/fonts/Georgia-BoldItalic.woff') format('woff'),
-       url('/fonts/Georgia-BoldItalic.ttf') format('truetype');
+    src: url('/fonts/Georgia-BoldItalic.woff2') format('woff2'), url('/fonts/Georgia-BoldItalic.woff') format('woff'),
+        url('/fonts/Georgia-BoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -81,9 +76,8 @@
 
 @font-face {
     font-family: 'Georgia';
-    src:url('/fonts/Georgia-Bold.woff2') format('woff2'),
-       url('/fonts/Georgia-Bold.woff') format('woff'),
-       url('/fonts/Georgia-Bold.ttf') format('truetype');
+    src: url('/fonts/Georgia-Bold.woff2') format('woff2'), url('/fonts/Georgia-Bold.woff') format('woff'),
+        url('/fonts/Georgia-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -91,12 +85,100 @@
 
 @font-face {
     font-family: 'Georgia';
-    src:url('/fonts/Georgia-Italic.woff2') format('woff2'),
-       url('/fonts/Georgia-Italic.woff') format('woff'),
-       url('/fonts/Georgia-Italic.ttf') format('truetype');
+    src: url('/fonts/Georgia-Italic.woff2') format('woff2'), url('/fonts/Georgia-Italic.woff') format('woff'),
+        url('/fonts/Georgia-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Thin.woff2') format('woff2'), url('/fonts/Inter-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-SemiBold.woff2') format('woff2'), url('/fonts/Inter-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Black.woff2') format('woff2'), url('/fonts/Inter-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-ExtraBold.woff2') format('woff2'), url('/fonts/Inter-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-ExtraLight.woff2') format('woff2'), url('/fonts/Inter-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Medium.woff2') format('woff2'), url('/fonts/Inter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Regular.woff2') format('woff2'), url('/fonts/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Light.woff2') format('woff2'), url('/fonts/Inter-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Bold.woff2') format('woff2'), url('/fonts/Inter-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url('/fonts/PTSerif-Bold.woff2') format('woff2'), url('/fonts/PTSerif-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url('/fonts/PTSerif-BoldItalic.woff2') format('woff2'), url('/fonts/PTSerif-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url('/fonts/PTSerif-Italic.woff2') format('woff2'), url('/fonts/PTSerif-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url('/fonts/PTSerif-Regular.woff2') format('woff2'), url('/fonts/PTSerif-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

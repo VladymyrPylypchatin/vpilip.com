@@ -1,6 +1,6 @@
 body {
-	font-family: 'Gotham Rounded';
-	color: #0a2e36;
+	font-family: 'Inter';
+	color: #333333;
 }
 p {
 	font-weight: 400;
@@ -25,13 +25,7 @@ ul {
 }
 
 .container,
-.post-container {
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
+.post-container,
 .small-container {
 	padding-right: 15px;
 	padding-left: 15px;
@@ -61,7 +55,7 @@ ul {
 	}
 
 	.post-container {
-		width: 680px;
+		width: 650px;
 	}
 }
 

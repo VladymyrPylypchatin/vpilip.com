@@ -2,9 +2,10 @@ import React from 'react';
 import { graphql } from 'gatsby'
 import styles from './PostPage.module.scss'
 
-import PostBody from './PostBody/PostBody'
 import PostLayout from "../../components/PostLayout/PostLayout";
 import SEO from '../../components/seo';
+import PostBody from './PostBody/PostBody'
+import PostHeader from './PostHeader/PostHeader';
 
 const PostPage = ({ data }) => {
     console.log(data);
@@ -17,7 +18,11 @@ const PostPage = ({ data }) => {
                 customTitle
             />
             <div className={styles.postPage}>
-                <h1>{blogPost.post_title[0].text}</h1>
+                {/* <h1>{blogPost.post_title[0].text}</h1> */}
+                <PostHeader
+                    title={blogPost.post_title[0].text}
+                    cover={blogPost.cover.cover.url}
+                />
                 <PostBody content={blogPost.content} />
             </div>
         </PostLayout>
@@ -33,6 +38,7 @@ export const query = graphql`
             content
             post_title
             sub_title
+            cover
           }
         } 
     }  

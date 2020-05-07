@@ -5,11 +5,13 @@ import styles from './PostBody.module.scss';
 
 export const htmlSerializer = function (type, element, content, children, key) {
 
-    console.log(type);
     switch (type) {
         case Elements.embed:
-            console.log(element);
-            return <ReactEmbedGist gist={element.oembed.gist} titleClass={styles.gistTitle} wrapperClass={styles.gist} />;
+            return (
+                <div className='post-container'>
+                    <ReactEmbedGist gist={element.oembed.gist} titleClass={styles.gistTitle} wrapperClass={styles.gist} />
+                </div>
+            );
         default:
             return null;
     }

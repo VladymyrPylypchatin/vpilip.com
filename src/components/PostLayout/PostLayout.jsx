@@ -4,13 +4,15 @@ import '../../assets/styles/reset.scss';
 import '../../assets/styles/fonts.scss';
 import '../../assets/styles/styles.scss';
 
-// import styles from './PostLayout.module.scss';
+import styles from './PostLayout.module.scss';
 import Header from './Header/Header';
 
 const PostLayout = ({ children }) => {
   return (
     <>
-      <Header />
+      <div className={styles.headerWrapper}>
+        <Header />
+      </div>
       <main>{children}</main>
       <footer>
 

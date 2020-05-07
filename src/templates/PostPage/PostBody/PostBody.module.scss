@@ -1,13 +1,18 @@
 .postBody {
-	font-family: 'Georgia';
 	p,
 	ul,
 	ol {
 		font-size: 21px;
-		line-height: 1.58;
+		line-height: 34px;
 		margin-top: 2em;
-		margin-bottom: 0;
-		font-weight: 400;
+		// margin-bottom: 0;
+		// font-weight: 400;
+		font-family: 'PT Serif';
+		// font-style: normal;
+		// font-weight: normal;
+		// font-size: 16px;
+		// line-height: 175.3%;
+		/* or 28px */
 	}
 
 	p,
@@ -22,7 +27,7 @@
 		margin-right: auto;
 		margin-left: auto;
 		width: 100%;
-		box-sizing: border-box;
+		// box-sizing: border-box;
 	}
 
 	img {
@@ -39,14 +44,15 @@
 		margin-left: 15px;
 		width: 100%;
 		box-sizing: border-box;
-		width: calc(100% - 30px);
+		width: 100%;
+		overflow: auto;
 	}
 
 	ul,
-	ol,
-	li {
+	ol {
 		margin-left: auto;
 		margin-right: auto;
+		box-sizing: border-box;
 	}
 	ul li,
 	ol li {
@@ -64,8 +70,18 @@
 	h4,
 	h5 {
 		margin-top: 2.25em;
-		margin-bottom: -1.28em;
+		margin-bottom: -0.5em;
 		font-weight: bold;
+		font-family: 'Inter';
+	}
+
+	h2 {
+		font-size: 32px;
+	}
+
+	h3 {
+		font-size: 24px;
+		margin-bottom: -0.7em;
 	}
 }
 
@@ -91,7 +107,7 @@
 		ul,
 		li,
 		pre {
-			width: 680px;
+			width: 650px;
 		}
 
 		pre {
@@ -100,11 +116,11 @@
 		}
 
 		img {
-			max-width: 680px;
+			max-width: 650px;
 		}
 
 		.gist {
-			max-width: 680px;
+			// max-width: 680px;
 		}
 	}
 }
