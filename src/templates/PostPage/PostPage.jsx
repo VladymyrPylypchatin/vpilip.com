@@ -21,7 +21,7 @@ const PostPage = ({ data }) => {
                 {/* <h1>{blogPost.post_title[0].text}</h1> */}
                 <PostHeader
                     title={blogPost.post_title[0].text}
-                    cover={blogPost.cover.cover.url}
+                    cover={blogPost.cover?.cover?.url}
                 />
                 <PostBody content={blogPost.content} />
             </div>
