@@ -1,0 +1,55 @@
+.emailSubs {
+    padding: 50px;
+    width: 100%;
+    background: #4ab19d;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 6px 4px 10px rgba(0, 0, 0, 0.09);
+    color: white;
+
+    h2 {
+        font-size: 32px;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    &__points {
+        margin-bottom: 40px;
+        font-size: 16px;
+
+        & > div {
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 25px;
+                margin-right: 20px;
+            }
+        }
+
+        & > div:not(:first-child) {
+            margin-top: 16px;
+        }
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        column-gap: 2px;
+
+        input {
+            height: 48px;
+            border: none;
+            // border-radius: 5px;
+            padding: 0 16px;
+        }
+
+        button {
+            height: 48px;
+            background: #efc958;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}

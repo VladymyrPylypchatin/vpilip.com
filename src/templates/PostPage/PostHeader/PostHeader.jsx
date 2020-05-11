@@ -10,10 +10,10 @@ const PostHeader = (props) => {
                         OUTREACH & CONTENT PROMOTION
                     </h2> */}
                     <h1 className={styles.postHeader__title}>{props.title}</h1>
-                    {/* <div className={styles.postHeader__authors}>
+                    <div className={styles.postHeader__authors}>
                         <a href="/">Vova Pilipchatin</a>
                         <a href="/">Tim Soulo</a>
-                    </div> */}
+                    </div>
                 </div>
             </div>
             <div className="post-container">
