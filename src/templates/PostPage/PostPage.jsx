@@ -25,7 +25,7 @@ const PostPage = ({ data }) => {
                 />
                 <PostBody content={blogPost.content} />
                 <div className={['post-container', styles.subscriberForm].join(' ')}>
-                    <EmailSubs />
+                    <EmailSubs formId={'1383803'} />
                 </div>
             </div>
         </PostLayout>

@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/Layout/Layout";
+import EmailSubs from '../components/EmailSubs/EmailSubs';
 import SEO from "../components/seo";
 
 const IndexPage = () => (
@@ -22,6 +23,13 @@ const IndexPage = () => (
             <p>If it sounds like it is what you need, you can contact me <Link to="/contacts/">here</Link>. Would love to hear from you.</p>
             <p>In my blog You can find lessons I learn about  Web App development, building Freelance business and launching Digital Products.</p>
             <p>Otherwise, you can learn more about me <Link to="/about/">here</Link>, or take a look at my <Link to="/projects/">portfolio</Link>.</p>
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <EmailSubs formId={'1386883'} />
         </div>
     </Layout>
 )

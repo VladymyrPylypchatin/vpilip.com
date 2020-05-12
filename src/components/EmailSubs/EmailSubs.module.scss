@@ -1,5 +1,5 @@
 .emailSubs {
-    padding: 50px;
+    padding: 30px;
     width: 100%;
     background: #4ab19d;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
     color: white;
 
     h2 {
-        font-size: 32px;
+        font-size: 24px;
         margin: 0;
         margin-bottom: 40px;
     }
@@ -50,6 +50,21 @@
             outline: none;
             border: none;
             cursor: pointer;
+        }
+    }
+
+    &__error {
+        font-weight: bold;
+        color: white;
+        line-height: 30px;
+    }
+
+    &_loading {
+        .emailSubs__form {
+            button {
+                opacity: 0.3;
+                pointer-events: none;
+            }
         }
     }
 }
