@@ -15,7 +15,7 @@
 		font-size: 24px;
 		text-decoration: none;
 		// text-transform: uppercase;
-		color: #0a2e36;
+		color: white;
 
 		img {
 			height: 100%;
@@ -38,14 +38,14 @@
 				text-transform: uppercase;
 				text-decoration: none;
 				font-size: 14px;
-				color: #0a2e36;
+				color: white;
 				transition: all 300ms ease-in-out;
-				border-bottom: 1px solid white;
+				// border-bottom: 1px solid white;
 
-				&:hover {
-					color: #e71d36;
-					border-bottom: 1px solid #e71d36;
-				}
+				// &:hover {
+				// 	color: #e71d36;
+				// 	border-bottom: 1px solid #e71d36;
+				// }
 			}
 		}
 	}
