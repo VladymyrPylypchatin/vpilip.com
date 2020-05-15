@@ -46,7 +46,7 @@ const PostPage = ({ data }) => {
       />
       {!isSSR ? (
         <React.Suspense fallback={<div />}>
-          <PageProgress />
+          <PageProgress height={5} color={'#4ab19d'} />
         </React.Suspense>
       ) : null}
       <div className={styles.postPage}>
