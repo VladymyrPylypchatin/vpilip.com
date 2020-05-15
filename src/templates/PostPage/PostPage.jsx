@@ -1,7 +1,9 @@
 import React from 'react';
 import { graphql } from 'gatsby'
-import PageProgress from 'react-page-progress';
 import styles from './PostPage.module.scss'
+const PageProgress = React.lazy(() =>
+  import("react-page-progress")
+)
 
 
 import PostLayout from "../../components/PostLayout/PostLayout";
@@ -42,7 +44,11 @@ const PostPage = ({ data }) => {
         customTitle
         links={links}
       />
-      {!isSSR ? <PageProgress color={'#4ab19d'} height={5} /> : null}
+      {!isSSR ? (
+        <React.Suspense fallback={<div />}>
+          <PageProgress />
+        </React.Suspense>
+      ) : null}
       <div className={styles.postPage}>
         <PostHeader
           title={blogPost.post_title[0].text}
