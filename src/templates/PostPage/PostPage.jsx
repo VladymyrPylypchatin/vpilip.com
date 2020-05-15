@@ -31,6 +31,8 @@ const PostPage = ({ data }) => {
 
   let cover = blogPost.cover.url;
   if (blogPost.cover?.cover) cover = blogPost.cover?.cover.url;
+  const isSSR = typeof window === "undefined"
+
 
   return (
     <PostLayout >
@@ -40,7 +42,7 @@ const PostPage = ({ data }) => {
         customTitle
         links={links}
       />
-      <PageProgress color={'#4ab19d'} height={5} />
+      {!isSSR ? <PageProgress color={'#4ab19d'} height={5} /> : null}
       <div className={styles.postPage}>
         <PostHeader
           title={blogPost.post_title[0].text}
