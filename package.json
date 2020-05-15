@@ -29,6 +29,7 @@
     "react-embed-gist": "^1.0.10",
     "react-helmet": "^5.2.1",
     "react-hook-form": "^5.7.0",
+    "react-page-progress": "^1.1.1",
     "react-toastify": "^6.0.2",
     "yup": "^0.28.5"
   },

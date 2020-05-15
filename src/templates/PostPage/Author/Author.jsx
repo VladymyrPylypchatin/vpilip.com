@@ -22,11 +22,11 @@ const Author = (props) => {
         <div className={styles.authorBlock}>
             <div>Article by:</div>
             <div className={styles.author}>
-                <Link href={'/'} className={styles.author__avatar}>
+                <Link to={'/'} className={styles.author__avatar}>
                     <img src={props.profileImg} alt={props.name} />
                 </Link>
                 <div className={styles.author__info}>
-                    <div className={styles.author__name}><Link href={'/'}>{props.name}</Link></div>
+                    <div className={styles.author__name}><Link to={'/'}>{props.name}</Link></div>
                     <div className={styles.author__description}>
                         {props.description}
                     </div>

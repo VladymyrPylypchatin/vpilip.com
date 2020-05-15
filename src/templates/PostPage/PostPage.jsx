@@ -1,6 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby'
+import PageProgress from 'react-page-progress';
 import styles from './PostPage.module.scss'
+
 
 import PostLayout from "../../components/PostLayout/PostLayout";
 import SEO from '../../components/seo';
@@ -16,46 +18,59 @@ import FacebookIcon from '../../assets/img/author/facebook.svg';
 import LinkedinIcon from '../../assets/img/author/linkedin.svg';
 
 const PostPage = ({ data }) => {
-    console.log(data);
-    const blogPost = data.prismic.blogpost;
-    const author = blogPost.author;
-    return (
-        <PostLayout >
-            <SEO
-                title={`${blogPost.post_title[0].text} | Vova Pilipchatin`}
-                description={blogPost.sub_title.text}
-                customTitle
-            />
-            <div className={styles.postPage}>
-                <PostHeader
-                    title={blogPost.post_title[0].text}
-                    cover={blogPost.cover?.cover?.url}
-                />
-                <PostBody content={blogPost.content} />
-                <div className={['post-container', styles.subscriberForm].join(' ')}>
-                    <EmailSubs formId={'1383803'} />
-                </div>
-                {
-                    author ?
-                        <div className={['post-container', styles.author].join(' ')}>
-                            <Author
-                                name={author.author_name[0].text}
-                                description={author.author_description[0].text}
-                                profileImg={author.author_profile_img.Preview.url}
-                                links={[
-                                    { id: 'main', url: author.main_website_link?.url, img: HomeIcon },
-                                    { id: 'linkedin', url: author.linkedin_link?.url, img: LinkedinIcon },
-                                    { id: 'twitter', url: author.twitter_link?.url, img: TwitterIcon },
-                                    { id: 'instagram', url: author.instagram_link?.url, img: InstagramIcon },
-                                    { id: 'facebook', url: author.facebook_link?.url, img: FacebookIcon },
-                                ]}
-                            />
-                        </div>
-                        : null
-                }
+  console.log(data);
+  const blogPost = data.prismic.blogpost;
+  const author = blogPost.author;
+  const links = [];
+  if (blogPost.canonical) {
+    links.push({
+      rel: `canonical`,
+      href: blogPost.canonical.url,
+    });
+  }
+
+  let cover = blogPost.cover.url;
+  if (blogPost.cover?.cover) cover = blogPost.cover?.cover.url;
+
+  return (
+    <PostLayout >
+      <SEO
+        title={`${blogPost.post_title[0].text} | Vova Pilipchatin`}
+        description={blogPost.sub_title.text}
+        customTitle
+        links={links}
+      />
+      <PageProgress color={'#4ab19d'} height={5} />
+      <div className={styles.postPage}>
+        <PostHeader
+          title={blogPost.post_title[0].text}
+          cover={cover}
+        />
+        <PostBody content={blogPost.content} />
+        {
+          author ?
+            <div className={['post-container', styles.author].join(' ')}>
+              <Author
+                name={author.author_name[0].text}
+                description={author.author_description[0].text}
+                profileImg={author.author_profile_img.Preview.url}
+                links={[
+                  { id: 'main', url: author.main_website_link?.url, img: HomeIcon },
+                  { id: 'linkedin', url: author.linkedin_link?.url, img: LinkedinIcon },
+                  { id: 'twitter', url: author.twitter_link?.url, img: TwitterIcon },
+                  { id: 'instagram', url: author.instagram_link?.url, img: InstagramIcon },
+                  { id: 'facebook', url: author.facebook_link?.url, img: FacebookIcon },
+                ]}
+              />
             </div>
-        </PostLayout>
-    );
+            : null
+        }
+        <div className={['post-container', styles.subscriberForm].join(' ')}>
+          <EmailSubs formId={'1383803'} />
+        </div>
+      </div>
+    </PostLayout>
+  );
 };
 
 export default PostPage;
@@ -68,6 +83,12 @@ export const query = graphql`
             post_title
             sub_title
             cover
+            canonical {
+              _linkType
+              ... on PRISMIC__ExternalLink {
+                url
+              }
+            }
             author {
                 ... on PRISMIC_Author {
                     author_name

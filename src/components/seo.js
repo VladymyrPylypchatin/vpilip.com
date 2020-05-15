@@ -3,7 +3,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 
-function SEO({ description, lang, meta, title, customTitle }) {
+function SEO({ description, lang, meta, title, customTitle, links }) {
 
     const metaDescription = description || `I am Vova Pilipchatin, a freelance Software Engineer. I am developing a Web Application, learning how to launch successful SaaS projects and learn how to build a freelance business.`;
 
@@ -48,6 +48,7 @@ function SEO({ description, lang, meta, title, customTitle }) {
                     content: metaDescription,
                 },
             ].concat(meta)}
+            link={links}
         />
     )
 }
