@@ -1,0 +1,26 @@
+.header {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+
+    h2 {
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    &__line {
+        height: 2px;
+        width: 70px;
+        background: #344e5c;
+        margin-bottom: 30px;
+    }
+
+    &_white {
+        color: white;
+
+        .header__line {
+            background: white;
+        }
+    }
+}

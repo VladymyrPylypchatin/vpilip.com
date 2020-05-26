@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/Layout/Layout";
 import EmailSubs from '../components/EmailSubs/EmailSubs';
 import SEO from "../components/seo";
+import MainPage from '../templates/MainPage/MainPage';
 
 const IndexPage = () => (
     <Layout>
@@ -12,6 +13,7 @@ const IndexPage = () => (
             customTitle
             description="Hi, there! I am Vova Pilipchatin, a freelance Software Engineer. I am developing a Web Application, learning how to launch successful SaaS projects and learn how to build a freelance business."
         />
+        <MainPage />
         <div className="small-container">
             <h1 className='small-h1'>Hi, I am Vova Pilipchatin, a freelance Software Engineer, Web App Deveveloper.</h1>
             <p>

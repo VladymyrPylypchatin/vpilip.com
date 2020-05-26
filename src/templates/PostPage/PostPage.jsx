@@ -1,10 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby'
 import styles from './PostPage.module.scss'
-const PageProgress = React.lazy(() =>
-  import("react-page-progress")
-)
-
 
 import PostLayout from "../../components/PostLayout/PostLayout";
 import SEO from '../../components/seo';
@@ -18,6 +14,11 @@ import TwitterIcon from '../../assets/img/author/twitter.svg';
 import InstagramIcon from '../../assets/img/author/instagram.svg';
 import FacebookIcon from '../../assets/img/author/facebook.svg';
 import LinkedinIcon from '../../assets/img/author/linkedin.svg';
+
+const PageProgress = React.lazy(() =>
+  import("react-page-progress")
+)
+
 
 const PostPage = ({ data }) => {
   console.log(data);

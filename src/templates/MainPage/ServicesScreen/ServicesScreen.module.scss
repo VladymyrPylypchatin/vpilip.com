@@ -1,0 +1,34 @@
+.screen {
+    color: white;
+    padding-bottom: 50px;
+
+    &__description {
+        background: #4ab19d;
+        padding-top: 50px;
+        margin-bottom: 50px;
+        padding-bottom: 200px;
+    }
+
+    &__services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        margin-top: -180px;
+
+        .serviceItem {
+            background: white;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            height: 270px;
+            color: #344e5c;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: flex-end;
+
+            h3 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+    }
+}
