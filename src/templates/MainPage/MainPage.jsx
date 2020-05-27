@@ -5,6 +5,7 @@ import IllustrationImg from '../../assets/img/mainpage.svg';
 import MainScreen from './MainScreen/MainScreen';
 import ServiceScreen from './ServicesScreen/ServicesScreen';
 import PortfolioScreen from './PortfolioScreen/PortfolioScreen';
+import WritingsScreen from './WritingsScreen/WritingsScreen';
 
 const MainPage = () => {
     return (
@@ -13,6 +14,7 @@ const MainPage = () => {
             <MainScreen />
             <ServiceScreen />
             <PortfolioScreen />
+            <WritingsScreen />
         </>
     );
 };

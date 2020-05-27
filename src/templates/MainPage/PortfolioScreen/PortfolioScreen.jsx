@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './PortfolioScreen.module.scss';
 
 import SectionHeader from '../../../components/UI/SectionHeader/SectionHeader';
+import Skill from '../../../components/UI/Skill/Skill';
+
 
 const PortfolioScreen = () => {
     return (
@@ -33,7 +35,47 @@ const PortfolioScreen = () => {
                         </b>
                     </p>
                 </div>
-
+                <div className={styles.screen__portfolio}>
+                    {/* <img className={styles.screen__portfolioBg} src={PortfolioBgImg} alt="background" /> */}
+                    <div className='container'>
+                        <div className={styles.portfolioItem}>
+                            <div className={styles.portfolioItem__meta}>
+                                <h3>JustAskme</h3>
+                                <p>Platform to help influencers monetize their expertise and rise funds.</p>
+                            </div>
+                            <div className={styles.portfolioItem__skills}>
+                                <Skill>Project Discovery</Skill>
+                                <Skill>Solution Architecture</Skill>
+                                <Skill>Web App Development</Skill>
+                                <Skill>Stripe Payment Integration</Skill>
+                                <Skill>Blog Development</Skill>
+                            </div>
+                        </div>
+                        <div className={styles.portfolioItem}>
+                            <div className={styles.portfolioItem__meta}>
+                                <h3>JoinPrivacy</h3>
+                                <p>Digital Privacy Management Web App. Take care of private data collected by services like Google, Facebook, Twitter...</p>
+                            </div>
+                            <div className={styles.portfolioItem__skills}>
+                                <Skill>Project Discovery</Skill>
+                                <Skill>Solution Architecture</Skill>
+                                <Skill>Web App Development</Skill>
+                                <Skill>Blog Development</Skill>
+                            </div>
+                        </div>
+                        <div className={styles.portfolioItem}>
+                            <div className={styles.portfolioItem__meta}>
+                                <h3>Real Estate Agency Automation</h3>
+                                <p>Web application for smart match making customer requests and realties. Auto email and SMS sand out. Platform for combining data from 2 CRM.</p>
+                            </div>
+                            <div className={styles.portfolioItem__skills}>
+                                <Skill>Project Discovery</Skill>
+                                <Skill>Solution Architecture</Skill>
+                                <Skill>Web App Development</Skill>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className='container section-separator'></div>
         </>
