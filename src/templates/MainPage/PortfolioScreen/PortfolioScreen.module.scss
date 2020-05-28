@@ -9,8 +9,9 @@
 
         & > div {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
             column-gap: 30px;
+            row-gap: 30px;
         }
     }
 
@@ -43,6 +44,26 @@
         p {
             font-size: 16px;
             line-height: 24px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .screen {
+        &__portfolio {
+            & > div {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+
+@media (min-width: 997px) {
+    .screen {
+        &__portfolio {
+            & > div {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
         }
     }
 }

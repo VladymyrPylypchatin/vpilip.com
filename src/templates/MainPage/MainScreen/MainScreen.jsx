@@ -7,8 +7,8 @@ const MainScreen = () => {
             <div className='small-container'>
                 <h2>Vova <br />Pilipchatin</h2>
                 <h1>I help Entrepreneurs build SaaS and Internet-Powered Business</h1>
-                <p>Hey! I am Vova Pilipchatin, a freelance Software Engineer. I help buissness owners to get from and idea to launch of their digital product or internet-powred buissness.</p>
-                <p>Also I share stories and lessons from my entepranurial journey in my blog.</p>
+                <p>Hey! I am Vova Pilipchatin, a freelance Software Engineer. I help business owners to get from an idea to launch their digital product or internet-powred business.</p>
+                <p>In my blog, you can find stories and lessons from my entrepreneurial journey.</p>
             </div>
         </div>
     );

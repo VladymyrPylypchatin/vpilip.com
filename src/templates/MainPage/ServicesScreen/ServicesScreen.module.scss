@@ -1,6 +1,7 @@
 .screen {
     color: white;
     padding-bottom: 50px;
+    background: #4ab19d;
 
     &__description {
         background: #4ab19d;
@@ -11,7 +12,8 @@
 
     &__services {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
         column-gap: 30px;
         margin-top: -180px;
 
@@ -29,6 +31,18 @@
                 font-size: 24px;
                 line-height: 32px;
             }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .screen {
+        color: white;
+        padding-bottom: 50px;
+        background: none;
+
+        &__services {
+            grid-template-columns: 1fr 1fr;
         }
     }
 }

@@ -9,6 +9,13 @@ p {
 	letter-spacing: 0.02em;
 }
 
+a {
+	color: #344e5c;
+	&:hover {
+		color: #ef3d59;
+	}
+}
+
 ul {
 	li {
 		margin-top: 1.34em;

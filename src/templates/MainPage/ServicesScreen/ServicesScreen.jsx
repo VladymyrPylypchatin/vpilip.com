@@ -11,11 +11,14 @@ const ServicesScreen = () => {
                     <div className='small-container'>
                         <SectionHeader white>How I can help you</SectionHeader>
                         <p>
-                            I know that field of tech develoment is complicated and a taugh spot to be in if you are a non-tech founder. So I will help you to get though complexity and uncertainty, define clear roadmap and launch your saas solution.
-                    </p>
+                            I know that field of software development is complicated and a tough spot to be in if you are a non-tech founder.
+                        </p>
                         <p>
-                            Building software tools is an investment! We will work with you to make this investmetn ROI positive.
-                    </p>
+                            In the noise of new technologies, it is easy to forget that <b>building software tools is an investment!</b> And investment should have a positive ROI.
+                        </p>
+                        <p>
+                            So I will help you to get through complexity and uncertainty, define a clear roadmap, and launch your saas solution.
+                        </p>
                     </div>
                 </div>
                 <div className='small-container'>

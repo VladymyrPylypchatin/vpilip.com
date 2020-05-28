@@ -6,15 +6,19 @@ import MainScreen from './MainScreen/MainScreen';
 import ServiceScreen from './ServicesScreen/ServicesScreen';
 import PortfolioScreen from './PortfolioScreen/PortfolioScreen';
 import WritingsScreen from './WritingsScreen/WritingsScreen';
+import EmailSubs from '../../components/EmailSubs/EmailSubs';
 
-const MainPage = () => {
+const MainPage = ({ blogPosts }) => {
     return (
         <>
             <img className={styles.illustration} src={IllustrationImg} alt='illustration' />
             <MainScreen />
             <ServiceScreen />
             <PortfolioScreen />
-            <WritingsScreen />
+            <WritingsScreen blogPosts={blogPosts} />
+            <div className='small-container' style={{ marginTop: 40 }}>
+                <EmailSubs formId={'1386883'} />
+            </div>
         </>
     );
 };

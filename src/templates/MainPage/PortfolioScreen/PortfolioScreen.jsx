@@ -12,7 +12,7 @@ const PortfolioScreen = () => {
                 <div className='small-container'>
                     <SectionHeader>What I have done</SectionHeader>
                     <p>
-                        This is what my clients say about my work:
+                        It is what my clients say about my work:
                    </p>
 
                     <p>
@@ -21,7 +21,7 @@ const PortfolioScreen = () => {
                         </i>
                         <br />
                         <b>
-                            - Daniel Pushkin, CEO of Real Estate Agency, NY
+                            - Daniel Kuperhand, CEO of Real Estate Agency, NY
                         </b>
                     </p>
 
@@ -40,8 +40,8 @@ const PortfolioScreen = () => {
                     <div className='container'>
                         <div className={styles.portfolioItem}>
                             <div className={styles.portfolioItem__meta}>
-                                <h3>JustAskme</h3>
-                                <p>Platform to help influencers monetize their expertise and rise funds.</p>
+                                <h3>Coming soon...</h3>
+                                <p>Platform to help influencers monetize their expertise and raise funds.</p>
                             </div>
                             <div className={styles.portfolioItem__skills}>
                                 <Skill>Project Discovery</Skill>
@@ -66,7 +66,7 @@ const PortfolioScreen = () => {
                         <div className={styles.portfolioItem}>
                             <div className={styles.portfolioItem__meta}>
                                 <h3>Real Estate Agency Automation</h3>
-                                <p>Web application for smart match making customer requests and realties. Auto email and SMS sand out. Platform for combining data from 2 CRM.</p>
+                                <p>Web application for smart matching customer requests and realities. Auto email and SMS notifications. A platform for combining data from 2 CRM systems.</p>
                             </div>
                             <div className={styles.portfolioItem__skills}>
                                 <Skill>Project Discovery</Skill>
