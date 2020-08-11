@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './SectionHeader.module.scss';
+import styles from './LandingSectionHeader.module.scss';
 
-const SectionHeader = (props) => {
+const LandingSectionHeader = (props) => {
     const headerClasses = [styles.header];
     if (props.white) headerClasses.push(styles.header_white);
 
@@ -15,4 +15,4 @@ const SectionHeader = (props) => {
     );
 };
 
-export default SectionHeader;
+export default LandingSectionHeader;

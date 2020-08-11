@@ -30,7 +30,9 @@
     "react-helmet": "^5.2.1",
     "react-hook-form": "^5.7.0",
     "react-page-progress": "^1.1.1",
+    "react-slick": "^0.27.5",
     "react-toastify": "^6.0.2",
+    "slick-carousel": "^1.8.1",
     "yup": "^0.28.5"
   },
   "devDependencies": {

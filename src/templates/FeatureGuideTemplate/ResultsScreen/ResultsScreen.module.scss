@@ -1,0 +1,113 @@
+.screen {
+    padding-top: 100px;
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 100px;
+    }
+
+    &__right {
+        margin: auto;
+        margin-top: 40px;
+        width: 320px;
+    }
+
+    &__previewImg {
+        margin: 20px;
+        box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.19);
+        width: calc(100% - 40px);
+    }
+
+    &__previewControls {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            margin-top: 0px !important;
+            margin: 0 10px;
+            button {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                font-size: 0;
+                outline: none;
+                border: none;
+                border-radius: 30px;
+                color: transparent;
+            }
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            display: flex;
+            align-items: flex-start;
+            font-size: 18px;
+            line-height: 26px;
+
+            img {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .screen {
+        padding-top: 100px;
+
+        &__content {
+            display: grid;
+            grid-template-columns: auto 320px;
+            column-gap: 100px;
+        }
+
+        &__previewImg {
+            margin: 20px;
+            box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.19);
+            width: calc(100% - 40px);
+        }
+
+        &__previewControls {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                margin-top: 0px !important;
+                margin: 0 10px;
+                button {
+                    cursor: pointer;
+                    height: 15px;
+                    width: 15px;
+                    font-size: 0;
+                    outline: none;
+                    border: none;
+                    border-radius: 30px;
+                    color: transparent;
+                }
+            }
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                display: flex;
+                align-items: flex-start;
+                font-size: 18px;
+                line-height: 26px;
+
+                img {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

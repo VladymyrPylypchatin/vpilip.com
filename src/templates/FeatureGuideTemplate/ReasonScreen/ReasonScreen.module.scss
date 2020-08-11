@@ -1,0 +1,23 @@
+.screen {
+    padding-top: 100px;
+
+    &__content {
+        display: grid;
+        // grid-template-columns: 35% auto;
+        // column-gap: 100px;
+    }
+    &__right {
+        max-width: 700px;
+        p {
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        ul {
+            li {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+    }
+}
