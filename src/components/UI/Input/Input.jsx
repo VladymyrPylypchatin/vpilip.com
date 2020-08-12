@@ -7,7 +7,6 @@ const Input = props => {
     const id = "styled_input_" + Math.random().toString();
     const style = {
         width: props.width,
-        height: props.height,
         marginBottom: props.marginBottom
     };
 
@@ -21,7 +20,8 @@ const Input = props => {
             <div className={styles.inputContainer}>
                 <input defaultValue={props.defaultValue} name={props.name} type={props.type} id={id} placeholder={props.placeholder} ref={props.register} />
             </div>
-            <div className={styles.input__error}>{props.error ? props.error.message : null}</div>
+            {props.error ? <div className={styles.input__error}>{props.error.message}</div> : null}
+
         </div>
     );
 }

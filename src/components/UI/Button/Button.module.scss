@@ -17,4 +17,9 @@
     &_stretch {
         width: 100%;
     }
+
+    &_loading {
+        opacity: 0.3;
+        pointer-events: none;
+    }
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from './DownloadModal.module.scss';
 import { useForm } from "react-hook-form";
 import * as yup from "yup"
+import { addSubscriber } from '../../../api';
 
 import Modal from '../../../components/UI/Modal/Modal';
 import Input from '../../../components/UI/Input/Input';
@@ -14,6 +15,7 @@ const FormSchema = yup.object().shape({
 
 const DownloadModal = ({ ...rest }) => {
     const [isLoading, setLoading] = useState(false);
+    const [isSuccess, setSuccess] = useState(false);
 
     const { register, handleSubmit, watch, errors, setValue } = useForm({
         validationSchema: FormSchema,
@@ -23,43 +25,51 @@ const DownloadModal = ({ ...rest }) => {
     const onSubmit = async (data) => {
         setLoading(true);
         alert('Submited')
-        // const response = await addSubscriber(, data.email, window.location.href);
-        // toast.success('Thank you! Please confirm subscription in your mailbox');
-        // setValue('email', '')
-        // console.log(response);
+        await addSubscriber('1591084', data.email, document.referrer);
         setLoading(false);
+        setSuccess(true);
     };
 
     console.log(errors)
 
+    let content = (
+        <div>
+            <h4>Where to send your book?</h4>
+            <Input
+                name="email"
+                placeholder="Your email"
+                height={50}
+                register={register}
+                error={errors.email}
+            />
+            <Button
+                isLoading={isLoading}
+                theme="blue"
+                stretch
+                height={50}
+                className={styles.modal__btn}
+                onClick={handleSubmit(onSubmit)}
+            >
+                Get the book!
+        </Button>
+            <div className={styles.modal__disclaimer}>
+                I collect your email address so you could receive helpful insights on SaaS product building and updates. You may unsubscribe from it at any time.
+        </div>
+        </div>
+    );
+
+    if (isSuccess) {
+        content = (
+            <div>
+                <h4>Thank you! Please check your inbox.</h4>
+            </div>
+        );
+    }
+
     return (
         <Modal {...rest}>
             <div className={styles.modal}>
-                <div>
-                    <h4>Where to send your book?</h4>
-                    <Input
-                        name="email"
-                        placeholder="Your email"
-                        height={50}
-                        register={register}
-                        error={errors.email}
-                    />
-                    <Button
-                        theme="blue"
-                        stretch
-                        height={50}
-                        className={styles.modal__btn}
-                        onClick={handleSubmit(onSubmit)}
-                    >
-                        Get the book!
-                    </Button>
-                    <div className={styles.modal__disclaimer}>
-                        I collect your email address so you could receive helpful insights on SaaS product building and updates. You may unsubscribe from it at any time.
-                    </div>
-                </div>
-                {/* <div className={styles.modal__mockup}>
-                    <img src={MockupImg} alt="SaaS App Feature Guide" />
-                </div> */}
+                {content}
             </div>
         </Modal>
     );

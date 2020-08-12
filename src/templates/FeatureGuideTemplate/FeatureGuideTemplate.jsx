@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import DownloadModal from './DownloadModal/DownloadModal';
 import MainScreen from './MainScreen/MainScreen';
@@ -7,19 +7,24 @@ import ResultsScreen from './ResultsScreen/ResultsScreen';
 import CTAScreen from './CTAScreen/CTAScreen'
 
 const FeatureGuideTemplate = () => {
+    const [isPopupOpen, setPopupOpen] = useState(false);
+    const openPopup = () => {
+        setPopupOpen(true);
+    };
 
     return (
         <div>
             <DownloadModal
-                isActive={true}
+                isActive={isPopupOpen}
                 // title="Download Your SaaS App Features Guide"
                 placeholder="Your email"
                 fitContent
+                onClose={() => setPopupOpen(false)}
             />
-            <MainScreen />
+            <MainScreen onDownloadClick={openPopup} />
             <ReasonScreen />
             <ResultsScreen />
-            <CTAScreen />
+            <CTAScreen onDownloadClick={openPopup} />
         </div>
     );
 };

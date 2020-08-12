@@ -5,7 +5,7 @@ import Button from '../../../components/UI/Button/Button';
 import MockupImg from '../../../assets/img/resources/featureguide/mockup.png';
 import ElipseImg from '../../../assets/img/resources/elipse.svg';
 
-const MainScreen = () => {
+const MainScreen = ({ onDownloadClick }) => {
     return (
         <section className={styles.screen}>
             <img className={styles.screen__elipse} src={ElipseImg} alt="Abstract Background" />
@@ -17,7 +17,7 @@ const MainScreen = () => {
                         <h2>
                             Shape up your SaaS idea and define its features to make your future app aligned with your business goals, vision, and budget.
                         </h2>
-                        <Button className={styles.screen__cta} theme="blue">Download Now For Free</Button>
+                        <Button onClick={onDownloadClick} className={styles.screen__cta} theme="blue">Download Now For Free</Button>
                     </div>
                     <div className={styles.screen__right}>
                         <img src={MockupImg} alt="The non-tech founder's SaaS App Feature Guide" />
