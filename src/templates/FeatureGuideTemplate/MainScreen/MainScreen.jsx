@@ -14,7 +14,9 @@ const MainScreen = () => {
                     <div className={styles.screen__left}>
                         <h3>Free download</h3>
                         <h1>The non-tech founder's SaaS App Feature Guide</h1>
-                        <h2>Shape up your SaaS idea and define it's feautres to make your future app aligned with your business goals, vision, and budget.</h2>
+                        <h2>
+                            Shape up your SaaS idea and define its features to make your future app aligned with your business goals, vision, and budget.
+                        </h2>
                         <Button className={styles.screen__cta} theme="blue">Download Now For Free</Button>
                     </div>
                     <div className={styles.screen__right}>

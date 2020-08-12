@@ -33,11 +33,15 @@ const ResultsScreen = () => {
                         <ul className={styles.screen__results}>
                             <li>
                                 <img src={CheckmarkImg} alt="Checkmark" />
-                                <span>Create a well defined specification to convery your idea to devs and desingers and get an accurate estimate</span>
+                                <span>Create a well-defined specification to convey your idea to devs and designers</span>
                             </li>
                             <li>
                                 <img src={CheckmarkImg} alt="Checkmark" />
-                                <span>Clarify you idea and app vision</span>
+                                <span>Organize your SaaS idea and vision</span>
+                            </li>
+                            <li>
+                                <img src={CheckmarkImg} alt="Checkmark" />
+                                <span>Define app features and architecture</span>
                             </li>
                             <li>
                                 <img src={CheckmarkImg} alt="Checkmark" />
@@ -45,11 +49,7 @@ const ResultsScreen = () => {
                             </li>
                             <li>
                                 <img src={CheckmarkImg} alt="Checkmark" />
-                                <span>Understand how you futre app gonna work</span>
-                            </li>
-                            <li>
-                                <img src={CheckmarkImg} alt="Checkmark" />
-                                <span>Define architecture of the app and its features</span>
+                                <span>Understand how your future app gonna work</span>
                             </li>
                         </ul>
                     </div>

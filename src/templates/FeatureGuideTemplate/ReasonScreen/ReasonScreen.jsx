@@ -13,24 +13,19 @@ const ReasonScreen = () => {
                     </div>
                     <div className={styles.screen__right}>
                         <p>
-                            Because developers and designers can build anything! The question is does it what you need.
+                            Developers and designers can build anything. The question is, does it do what you need.
                         </p>
-
                         <p>
-                            You are the one who knows customers, and their pains. Features of the application are dictated by user needs and goals.
+                            👉 You are the one who best understands the problem and solution, but your ability to communicate your vision to designers and developers will ultimately determine your product's success.
                         </p>
-
                         <p>
-                            Clearly defined features of SaaS Application before the development will help you save time, money, and deliver a better product.
+                            Well-defined features and architecture of SaaS Application will help you save time, money, and deliver a better product.
                         </p>
-
-                        <ul>
-                            <li>Designers and developers better understand the project</li>
-                            <li>You can manage your resources better because of more accurate estimates</li>
-                            <li>Reduce risk of breaking deadlines and going over the budget</li>
-                            <li>Make communication easier</li>
-                            <li>Keep everybody aligned with your vision of the project</li>
-                        </ul>
+                        <p>
+                            <b>
+                                This guide will help you organize your SaaS idea to convey it accurately to developers and designers.
+                            </b>
+                        </p>
                     </div>
                 </div>
             </div>

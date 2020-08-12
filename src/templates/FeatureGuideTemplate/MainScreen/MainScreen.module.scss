@@ -16,6 +16,7 @@
 
     &__cta {
         width: 100%;
+        margin-top: 30px;
     }
 
     &__right {
@@ -60,16 +61,21 @@
             max-height: 110vh;
             z-index: 1;
         }
+
+        &__cta {
+            width: auto;
+        }
         &__content {
             display: grid;
             grid-template-columns: 57% auto;
             column-gap: 100px;
         }
         &__right {
+            grid-column: 2;
             position: relative;
             z-index: 3;
             img {
-                height: 515px;
+                height: auto;
             }
         }
 
@@ -81,7 +87,7 @@
         h2 {
             font-weight: normal;
             font-size: 24px;
-            line-height: 40px;
+            line-height: 32px;
         }
 
         h1 {

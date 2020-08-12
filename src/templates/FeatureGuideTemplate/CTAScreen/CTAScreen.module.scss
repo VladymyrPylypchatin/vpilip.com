@@ -25,3 +25,11 @@
         // justify-content: flex-end;
     }
 }
+
+@media (min-width: 768px) {
+    .screen {
+        &__btn {
+            width: auto;
+        }
+    }
+}

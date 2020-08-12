@@ -1,0 +1,27 @@
+.modal {
+    // display: grid;
+    // grid-template-columns: 55% auto;
+    // column-gap: 60px;
+
+    &__btn {
+        margin-top: 20px;
+    }
+
+    &__disclaimer {
+        margin-top: 30px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    &__mockup {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .modal {
+        width: 350px;
+    }
+}
