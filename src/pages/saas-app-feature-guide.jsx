@@ -16,6 +16,10 @@ const SaasGuidePage = () => {
                         content: PreviewImg,
                     },
                     {
+                        name: `og:image:secure`,
+                        content: PreviewImg,
+                    },
+                    {
                         name: `twitter:image`,
                         content: PreviewImg,
                     },
