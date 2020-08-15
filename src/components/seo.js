@@ -37,7 +37,7 @@ function SEO({ description, lang, meta, title, customTitle, links }) {
                 },
                 {
                     name: `twitter:creator`,
-                    content: `Vova Pilipchatin`,
+                    content: `@VPilipchatin`,
                 },
                 {
                     name: `twitter:title`,
