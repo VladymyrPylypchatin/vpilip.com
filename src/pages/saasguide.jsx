@@ -15,6 +15,10 @@ const SaasGuidePage = () => {
                         name: `og:image`,
                         content: PreviewImg,
                     },
+                    {
+                        name: `twitter:image`,
+                        content: PreviewImg,
+                    },
                 ]}
                 description="Shape up your SaaS idea and define its features to make your future app aligned with your vision, business goals, and budget."
             />
