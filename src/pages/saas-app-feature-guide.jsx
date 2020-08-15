@@ -13,15 +13,15 @@ const SaasGuidePage = () => {
                 meta={[
                     {
                         name: `og:image`,
-                        content: PreviewImg,
+                        content: `https://vpilip.com/img/preview.png`,
                     },
                     {
                         name: `og:image:secure`,
-                        content: PreviewImg,
+                        content: `https://vpilip.com/img/preview.png`,
                     },
                     {
                         name: `twitter:image`,
-                        content: PreviewImg,
+                        content: `https://vpilip.com/img/preview.png`,
                     },
                 ]}
                 description="Shape up your SaaS idea and define its features to make your future app aligned with your vision, business goals, and budget."
