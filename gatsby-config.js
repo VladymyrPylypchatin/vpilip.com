@@ -38,7 +38,7 @@ module.exports = {
         includeInDevelopment: true,
         gtmAuth: "xDGAs7uKntNF5bX-58s9tQ",
         gtmPreview: "env-1",
-        dataLayerName: "YOUR_DATA_LAYER_NAME",
+        dataLayerName: "dataLayer",
       },
     },
     `gatsby-plugin-robots-txt`,

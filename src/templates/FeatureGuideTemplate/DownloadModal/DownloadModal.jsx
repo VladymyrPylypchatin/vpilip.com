@@ -13,7 +13,7 @@ const FormSchema = yup.object().shape({
     email: yup.string().required('Please enter your email').email('Please check your email'),
 });
 
-const DownloadModal = ({ ...rest }) => {
+const DownloadModal = ({ popupId, ...rest }) => {
     const [isLoading, setLoading] = useState(false);
     const [isSuccess, setSuccess] = useState(false);
 
@@ -24,17 +24,21 @@ const DownloadModal = ({ ...rest }) => {
 
     const onSubmit = async (data) => {
         setLoading(true);
-        alert('Submited')
         await addSubscriber('1591084', data.email, document.referrer);
         setLoading(false);
         setSuccess(true);
+        window.dataLayer.push({
+            event: 'Subscribed',
+            resource: 'App Feature Guide',
+            source: popupId,
+        });
     };
 
     console.log(errors)
 
     let content = (
         <div>
-            <h4>Where to send your book?</h4>
+            <h4>Where should I send your copy?</h4>
             <Input
                 name="email"
                 placeholder="Your email"
@@ -61,7 +65,7 @@ const DownloadModal = ({ ...rest }) => {
     if (isSuccess) {
         content = (
             <div>
-                <h4>Thank you! Please check your inbox.</h4>
+                <h4>Thank you! Please check your email inbox for an email from me</h4>
             </div>
         );
     }
