@@ -65,7 +65,7 @@ const DownloadModal = ({ popupId, ...rest }) => {
     if (isSuccess) {
         content = (
             <div>
-                <h4>Thank you! Please check your email inbox for an email from me</h4>
+                <h4>Thank you! Please check your email inbox for an email from me.</h4>
             </div>
         );
     }
