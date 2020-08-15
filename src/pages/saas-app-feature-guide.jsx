@@ -12,15 +12,19 @@ const SaasGuidePage = () => {
                 customTitle
                 meta={[
                     {
-                        name: `og:image`,
+                        property: `og:image`,
                         content: `https://vpilip.com/img/preview.png`,
                     },
                     {
-                        name: `og:image:secure`,
+                        property: `og:image:secure`,
                         content: `https://vpilip.com/img/preview.png`,
                     },
                     {
                         name: `twitter:image`,
+                        content: `https://vpilip.com/img/preview.png`,
+                    },
+                    {
+                        name: `twitter:image:src`,
                         content: `https://vpilip.com/img/preview.png`,
                     },
                 ]}
