@@ -5,6 +5,7 @@ import MainScreen from './MainScreen/MainScreen';
 import ReasonScreen from './ReasonScreen/ReasonScreen';
 import ResultsScreen from './ResultsScreen/ResultsScreen';
 import CTAScreen from './CTAScreen/CTAScreen'
+import MainScreenComing from './MainScreenComing/MainScreenComing';
 
 const FeatureGuideTemplate = () => {
     const [isPopupOpen, setPopupOpen] = useState(false);
@@ -28,18 +29,19 @@ const FeatureGuideTemplate = () => {
 
     return (
         <div>
-            <DownloadModal
+            <MainScreenComing />
+            {/* <DownloadModal
                 popupId={popupName}
                 isActive={isPopupOpen}
                 // title="Download Your SaaS App Features Guide"
                 placeholder="Your email"
                 fitContent
                 onClose={closePopup}
-            />
-            <MainScreen onDownloadClick={() => openPopup('MainScreen')} />
-            <ReasonScreen />
+            /> */}
+            {/* <MainScreen onDownloadClick={() => openPopup('MainScreen')} /> */}
+            {/* <ReasonScreen />
             <ResultsScreen />
-            <CTAScreen onDownloadClick={() => openPopup('FooterCTA')} />
+            <CTAScreen onDownloadClick={() => openPopup('FooterCTA')} /> */}
         </div>
     );
 };
