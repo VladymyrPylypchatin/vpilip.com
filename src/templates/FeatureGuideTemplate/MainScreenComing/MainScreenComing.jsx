@@ -62,7 +62,7 @@ const MainScreen = () => {
                         </h2>
                         <div>
                             <span>Live in: </span>
-                            <Countdown date={new Date(`08/24/2020 06:00:00`)} renderer={({ total, days, hours, minutes, seconds, milliseconds, completed }) => {
+                            <Countdown date={new Date(`08/31/2020 06:00:00`)} renderer={({ total, days, hours, minutes, seconds, milliseconds, completed }) => {
                                 return (`${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`
                                 );
                             }} />

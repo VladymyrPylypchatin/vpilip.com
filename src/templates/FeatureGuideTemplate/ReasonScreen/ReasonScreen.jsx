@@ -23,7 +23,7 @@ const ReasonScreen = () => {
                         </p>
                         <p>
                             <b>
-                                This guide will help you organize your SaaS idea to convey it accurately to developers and designers.
+                                This guide there to help you organize your SaaS idea to convey it accurately to developers and designers.
                             </b>
                         </p>
                     </div>
