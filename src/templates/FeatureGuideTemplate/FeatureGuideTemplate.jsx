@@ -29,19 +29,19 @@ const FeatureGuideTemplate = () => {
 
     return (
         <div>
-            <MainScreenComing />
-            {/* <DownloadModal
+            {/* <MainScreenComing /> */}
+            <DownloadModal
                 popupId={popupName}
                 isActive={isPopupOpen}
                 // title="Download Your SaaS App Features Guide"
                 placeholder="Your email"
                 fitContent
                 onClose={closePopup}
-            /> */}
-            {/* <MainScreen onDownloadClick={() => openPopup('MainScreen')} /> */}
-            {/* <ReasonScreen />
+            />
+            <MainScreen onDownloadClick={() => openPopup('MainScreen')} />
+            <ReasonScreen />
             <ResultsScreen />
-            <CTAScreen onDownloadClick={() => openPopup('FooterCTA')} /> */}
+            <CTAScreen onDownloadClick={() => openPopup('FooterCTA')} />
         </div>
     );
 };

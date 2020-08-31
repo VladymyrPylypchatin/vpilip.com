@@ -57,7 +57,7 @@ const DownloadModal = ({ popupId, ...rest }) => {
                 Get the book!
         </Button>
             <div className={styles.modal__disclaimer}>
-                I collect your email address so you could receive helpful insights on SaaS product building and updates. You may unsubscribe from it at any time.
+                I collect your email address so you could receive SaaS App Feature Guide and other helpful materials on SaaS product building and updates. You may unsubscribe from it at any time.
         </div>
         </div>
     );
