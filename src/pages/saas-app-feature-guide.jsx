@@ -8,7 +8,7 @@ const SaasGuidePage = () => {
     return (
         <>
             <SEO
-                title="The non-tech founder's SaaS App Feature Guide by Vova Pilipchatin"
+                title="Guide how to organize product idea for your next tech startup"
                 customTitle
                 meta={[
                     {
@@ -28,7 +28,7 @@ const SaasGuidePage = () => {
                         content: `https://vpilip.com/img/preview.png`,
                     },
                 ]}
-                description="Shape up your SaaS idea and define its features to make your future app aligned with your vision, business goals, and budget."
+                description="Turn a vague idea into a clear vision needed to validate, build & launch your next software business."
             />
             <FeatureGuideTemplate />
         </>

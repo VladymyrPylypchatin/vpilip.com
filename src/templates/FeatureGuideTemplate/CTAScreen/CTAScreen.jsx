@@ -11,7 +11,7 @@ const CTAScreen = ({ onDownloadClick }) => {
             <div className={'container'}>
                 <div className={styles.screen__content}>
                     <div className={styles.screen__left}>
-                        <h2>Get started with your free SaaS App Feature Guide</h2>
+                        <h2>Get started with your free Product idea Shaping Guide</h2>
                     </div>
                     <div className={styles.screen__right}>
                         <Button onClick={onDownloadClick} className={styles.screen__btn} theme="blue">Download Now For Free</Button>

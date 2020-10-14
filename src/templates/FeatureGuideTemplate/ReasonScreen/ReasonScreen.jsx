@@ -13,6 +13,18 @@ const ReasonScreen = () => {
                     </div>
                     <div className={styles.screen__right}>
                         <p>
+                            You are the one who bests understands the problem and solution, but <b>your ability to communicate your vision determines your product's success.</b>
+                        </p>
+
+                        <p>
+                            👉 Organizing your vision into well-defined architecture, features and target audience will help you validate, build & launch your product.
+                        </p>
+
+                        <p>
+                            <b>This guide helps you organize your SaaS idea to convey it to future customers, builders and get a more in-depth understanding yourself.</b>
+                        </p>
+
+                        {/* <p>
                             Developers and designers can build anything. The question is, does it do what you need.
                         </p>
                         <p>
@@ -25,7 +37,7 @@ const ReasonScreen = () => {
                             <b>
                                 This guide there to help you organize your SaaS idea to convey it accurately to developers and designers.
                             </b>
-                        </p>
+                        </p> */}
                     </div>
                 </div>
             </div>

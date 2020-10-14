@@ -12,15 +12,15 @@ const MainScreen = ({ onDownloadClick }) => {
             <div className={'container'}>
                 <div className={styles.screen__content}>
                     <div className={styles.screen__left}>
-                        <h3>Free download</h3>
-                        <h1>The non-tech founder's SaaS App Feature Guide</h1>
+                        <h3>Guide for service business founders</h3>
+                        <h1>How to organize product idea for your next tech startup</h1>
                         <h2>
-                            Shape up your SaaS idea and define its features to make your future app aligned with your vision, business goals, and budget.
+                            Turn a vague idea into a clear vision needed to validate, build & launch your next software business.
                         </h2>
                         <Button onClick={onDownloadClick} className={styles.screen__cta} theme="blue">Download Now For Free</Button>
                     </div>
                     <div className={styles.screen__right}>
-                        <img src={MockupImg} alt="The non-tech founder's SaaS App Feature Guide" />
+                        <img src={MockupImg} alt="How to organize product idea for your next tech startup" />
                     </div>
                 </div>
             </div>
