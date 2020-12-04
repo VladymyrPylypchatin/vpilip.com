@@ -8,7 +8,7 @@ const SaasGuidePage = () => {
     return (
         <>
             <SEO
-                title="Guide how to organize product idea for your next tech startup"
+                title="Guide how to plan product idea for your next scalable business"
                 customTitle
                 meta={[
                     {

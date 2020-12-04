@@ -13,14 +13,14 @@ const MainScreen = ({ onDownloadClick }) => {
                 <div className={styles.screen__content}>
                     <div className={styles.screen__left}>
                         <h3>Guide for service business founders</h3>
-                        <h1>How to organize product idea for your next tech startup</h1>
+                        <h1>How to plan product idea for your next scalable business</h1>
                         <h2>
                             Turn a vague idea into a clear vision needed to validate, build & launch your next software business.
                         </h2>
                         <Button onClick={onDownloadClick} className={styles.screen__cta} theme="blue">Download Now For Free</Button>
                     </div>
                     <div className={styles.screen__right}>
-                        <img src={MockupImg} alt="How to organize product idea for your next tech startup" />
+                        <img src={MockupImg} alt="How to plan product idea for your next scalable business" />
                     </div>
                 </div>
             </div>
